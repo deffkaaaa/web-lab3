@@ -195,44 +195,43 @@ li {
     font-size: clamp(20px, 2.5vw, 40px);
 }
 
-/* Медіазапити для адаптації під мобільні пристрої */
+
 
 @media (max-width: 768px) {
     .container {
-        grid-template-rows: 0.8fr 0.5fr 2fr 0.5fr 0.8fr; /* Налаштовуємо ряди для мобільних */
-        grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Налаштовуємо колонки для мобільних */
+        grid-template-rows: 0.8fr 0.5fr 2fr 0.5fr 0.8fr; 
+        grid-template-columns: 1.5fr 1fr 1fr 1fr; 
         gap: 5px;
     }
 
     .block {
-        min-height: 150px; /* Зменшуємо висоту для мобільних пристроїв */
+        min-height: 150px;
     }
 
     .block img {
-        max-height: 200px; /* Обмежуємо висоту зображень */
-        object-fit: cover; /* Оптимізуємо великі зображення */
+        max-height: 200px; 
+        object-fit: cover; 
     }
 
-    /* Налаштування для блоків 2 та 5 */
     .block2, .block5 {
-        display: block; /* Упевнюємося, що блоки не приховані */
+        display: block;
     }
 
     .blockX, .blockY {
-        font-size: 5vw; /* Зменшуємо розмір тексту на маленьких екранах */
+        font-size: 5vw; 
     }
 
     .block6 {
-        font-size: clamp(10px, 2vw, 24px); /* Менший розмір тексту для мобільних */
+        font-size: clamp(10px, 2vw, 24px); 
     }
 
     h2 {
-        font-size: 4vw; /* Зменшуємо заголовки для мобільних */
+        font-size: 4vw; 
     }
 
     ol, ul {
-        padding-left: 1rem; /* Зменшуємо відступи */
-        max-width: 90%; /* Компактний контент */
+        padding-left: 1rem; 
+        max-width: 90%; 
     }
 
     li {
@@ -242,8 +241,8 @@ li {
 
 @media (max-width: 480px) {
     .container {
-        grid-template-rows: 1fr 0.8fr 2fr 0.8fr 1fr; /* Ще менші висоти рядів */
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* Вирівнюємо ширину колонок */
+        grid-template-rows: 1fr 0.8fr 2fr 0.8fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
         gap: 3px;
     }
 
@@ -256,7 +255,7 @@ li {
     }
 
     .block2, .block5 {
-        display: block; /* Переконаємося, що вони відображаються */
+        display: block; 
     }
 
     .blockX, .blockY {
@@ -264,7 +263,7 @@ li {
     }
 
     .block6 {
-        font-size: clamp(8px, 1.5vw, 20px); /* Дуже малий розмір тексту для малих екранів */
+        font-size: clamp(8px, 1.5vw, 20px); 
     }
 
     h2 {
