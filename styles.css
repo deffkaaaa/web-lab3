@@ -199,14 +199,8 @@ li {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-areas:
-            "block1 block1 block1"
-            "block2 block3 block4"
-            "block5 block3 block4"
-            "block5 block6 block4"
-            "block7 block7 block7";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 0.8fr 0.5fr 2fr 0.5fr 0.8fr; /* Зменшуємо висоти рядів для мобільних */
+        grid-template-columns: 1fr 1.5fr 1fr 1fr; /* Сітка залишається багатоколонною, але вже */
         gap: 5px;
     }
 
@@ -240,13 +234,8 @@ li {
 
 @media (max-width: 480px) {
     .container {
-        grid-template-areas:
-        "block1 block1 block1"
-        "block2 block3 block4"
-        "block5 block3 block4"
-        "block5 block6 block4"
-        "block7 block7 block7";
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.8fr 2fr 0.8fr 1fr; /* Ще менші висоти рядів */
+        grid-template-columns: 0.9fr 1.2fr 0.9fr 0.9fr; /* Зберегти структуру, але зробити ще вужчою */
         gap: 3px;
     }
 
