@@ -134,7 +134,7 @@ ul {
 li {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: clamp(14px, 1.5vw, 28px);
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 
 
@@ -149,7 +149,7 @@ li {
     background-color: #000000; 
     color: #ffffff;
     font-family: 'Porsche Font', sans-serif;
-    font-size: clamp(13px, 2vw, 32px);
+    font-size: clamp(12px, 1.5vw, 28px);
     overflow: auto;
     max-width: 100%;
     display: flex;
@@ -222,6 +222,10 @@ li {
         font-size: 5vw; /* Зменшуємо розмір тексту на маленьких екранах */
     }
 
+    .block6 {
+        font-size: clamp(10px, 2vw, 24px); /* Менший розмір тексту для мобільних */
+    }
+
     h2 {
         font-size: 4vw; /* Зменшуємо заголовки для мобільних */
     }
@@ -232,7 +236,7 @@ li {
     }
 
     li {
-        font-size: 3.5vw; /* Зменшуємо текст у списках */
+        font-size: clamp(10px, 2vw, 20px);
     }
 }
 
@@ -259,11 +263,15 @@ li {
         font-size: 6vw;
     }
 
+    .block6 {
+        font-size: clamp(8px, 2.5vw, 20px); /* Дуже малий розмір тексту для малих екранів */
+    }
+
     h2 {
         font-size: 4vw;
     }
 
     li {
-        font-size: 3vw;
+        font-size: clamp(8px, 2.5vw, 18px);
     }
 }
