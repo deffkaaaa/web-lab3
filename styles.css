@@ -83,6 +83,9 @@ a:hover {
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .block3 { 
