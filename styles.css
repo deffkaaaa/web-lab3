@@ -199,43 +199,47 @@ li {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-rows: 0.8fr 0.5fr 2fr 0.5fr 0.8fr; /* Зменшуємо висоти рядів для мобільних */
-        grid-template-columns: 1fr 1.5fr 1fr 1fr; /* Сітка залишається багатоколонною, але вже */
+        grid-template-rows: 0.8fr 0.5fr 2fr 0.5fr 0.8fr; /* Налаштовуємо ряди для мобільних */
+        grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Налаштовуємо колонки для мобільних */
         gap: 5px;
     }
 
     .block {
-        min-height: 150px; /* Зменшити висоту для мобільних пристроїв */
-        max-height: none; /* Забрати обмеження по висоті */
+        min-height: 150px; /* Зменшуємо висоту для мобільних пристроїв */
     }
 
     .block img {
-        max-height: 200px; /* Обмежити висоту зображень */
-        object-fit: cover; /* Краще адаптувати великі зображення */
+        max-height: 200px; /* Обмежуємо висоту зображень */
+        object-fit: cover; /* Оптимізуємо великі зображення */
+    }
+
+    /* Налаштування для блоків 2 та 5 */
+    .block2, .block5 {
+        display: block; /* Упевнюємося, що блоки не приховані */
     }
 
     .blockX, .blockY {
-        font-size: 5vw; /* Зменшити розмір тексту на маленьких екранах */
+        font-size: 5vw; /* Зменшуємо розмір тексту на маленьких екранах */
     }
 
     h2 {
-        font-size: 4vw; /* Зменшити заголовки для мобільних */
+        font-size: 4vw; /* Зменшуємо заголовки для мобільних */
     }
 
     ol, ul {
-        padding-left: 1rem; /* Зменшити відступи */
-        max-width: 90%; /* Зробити контент компактнішим */
+        padding-left: 1rem; /* Зменшуємо відступи */
+        max-width: 90%; /* Компактний контент */
     }
 
     li {
-        font-size: 3.5vw; /* Зменшити текст в списках */
+        font-size: 3.5vw; /* Зменшуємо текст у списках */
     }
 }
 
 @media (max-width: 480px) {
     .container {
         grid-template-rows: 1fr 0.8fr 2fr 0.8fr 1fr; /* Ще менші висоти рядів */
-        grid-template-columns: 0.9fr 1.2fr 0.9fr 0.9fr; /* Зберегти структуру, але зробити ще вужчою */
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Вирівнюємо ширину колонок */
         gap: 3px;
     }
 
@@ -245,6 +249,10 @@ li {
 
     .block img {
         max-height: 150px;
+    }
+
+    .block2, .block5 {
+        display: block; /* Переконаємося, що вони відображаються */
     }
 
     .blockX, .blockY {
